@@ -59,7 +59,35 @@
 						
 						<!-- Countdown start -->
 						<div class="countdown-timer-wrapper">
-							<div class="timer" id="countdown"></div>
+							<div class="timer" id="countdown">
+								<div class="timer-wrapper">
+									<div class="time">
+								<span class="days"></span>
+                                   <h5 class="text">DAYS</h5>
+								</div>
+								</div>
+								<div class="timer-wrapper">
+									<div class="time">
+										<span class="hours"></span>
+										<h5 class="text">HOURS</h5>
+									</div>
+								</div>
+
+								<div class="timer-wrapper">
+									<div class="time">
+										<span class="minutes"></span>
+										<h5 class="text"> MINUTES</h5>
+									</div>
+								</div>
+								
+								<div class="timer-wrapper">
+									<div class="time">
+										<span class="seconds"></span>
+										<h5 class="text">SECONDS</h5>
+									</div>
+								</div>
+						
+							</div>
 						</div>
 						<!-- Countdown end -->
 						
@@ -100,21 +128,7 @@
     <!-- Main Custom js file -->
 	<script src="js/function.js"></script>
 	<!-- Timer counter start -->
-	<script>
-        $(document).ready(function (){
-			//var myDate = new Date("08/04/2019");
-			var myDate = new Date();
-			myDate.setDate(myDate.getDate() +10);
-            $("#countdown").countdown(myDate, function (event) {
-                $(this).html(
-                    event.strftime(
-                        '<div class="timer-wrapper"><div class="time">%D</div><span class="text">Days</span></div><div class="timer-wrapper"><div class="time">%H</div><span class="text">Hours</span></div><div class="timer-wrapper"><div class="time">%M</div><span class="text">Minutes</span></div><div class="timer-wrapper"><div class="time">%S</div><span class="text">Seconds</span></div>'
-                    )
-                );
-            });
-
-        });
-    </script>
+<script src="js/script.js"></script>
 	<!-- Timer counter end -->
 </body>
 </html>
